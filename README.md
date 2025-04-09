@@ -32,7 +32,6 @@ Este proyecto es una plataforma de ecommerce de comida desarrollada con un enfoq
 
 ![0](https://i.imgur.com/EcMfGaq.jpeg)
 ![1](https://i.imgur.com/9VoyAMi.jpeg)
-![2](https://i.imgur.com/9HD2Nju.jpeg)
 ![3](https://i.imgur.com/u3UOlEJ.jpeg)
 ![4](https://i.imgur.com/i5EkDKF.jpeg)
 ![5](https://i.imgur.com/mvlSfzU.jpeg)
