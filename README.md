@@ -1,66 +1,54 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Ecommerce de comida con gestión para usuarios y administradores
+. 
+``
+Lógica de la aplicación
+``
+Este proyecto es una plataforma de ecommerce de comida desarrollada con un enfoque fullstack. Permite a los usuarios explorar un catálogo de productos, agregarlos a un carrito de compras, modificarlos o quitarlos, y realizar pedidos, en los cuáles solamente funcionaran mediante un sistema de pago con tarjeta de crédito o débito. La aplicación también incluye un panel administrativo donde se puede modificar el stock de un producto, y confirmar los pedidos realizados.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Útilizo Laravel Sanctum para la autenticación y la generación de tokens, una interfaz hecha con Tailwind CSS, y una arquitectura hecho con un patrón de diseño que mejora la mantenibilidad del código. Además, todo el proyecto está contenedizado con Docker.
 
-## About Laravel
+# Autenticación
+- Se usa Laravel Sanctum.
+- El token se almacena en el frontend con LocalStorage.
+- El token no tiene una expiración de tiempo limitada.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Carrito
+- Los productos se pueden añadir a un carrito.
+- Tienen un límite de hasta 5 productos individuales.
+- Se pueden modificar o borrar una vez añadidos al carrito.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Sistema de pago
+- El formulario de pago aparecerá una vez que hayan productos en el carrito.
+- La validación simula inputs de tarjetas reales (numero de tarjeta, cvv, fecha de vencimiento, tipo de tarjeta)
+- Es una migración distinta que saca el monto a través de una foreign key
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Desarrollo
+- Backend: Laravel
+- Frontend: React JS & TypeScript
+- BD: MySQL
+- Validaciones: Laravel validations, Custom Hooks
+- Autenticación: Laravel Sanctum 
+- UI: Taiwind CSS, Lucide Dev Icons
+- Contenerización: Docker
 
-## Learning Laravel
+# Imagenes del proyecto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![0](https://i.imgur.com/EcMfGaq.jpeg)
+![1](https://i.imgur.com/kUl2OQH.jpeg)
+![2](https://i.imgur.com/9HD2Nju.jpeg)
+![3](https://i.imgur.com/Pd9vu4v.jpeg)
+![4](https://i.imgur.com/f8EulJM.jpeg)
+![5](https://i.imgur.com/NkZlkZl.jpeg)
+![6](https://i.imgur.com/vAWgqVT.jpeg)
+![7](https://i.imgur.com/FGDZVzK.jpeg)
+![8](https://i.imgur.com/Qsvb7E0.jpeg)
+![9](https://i.imgur.com/DYLSHJo.jpeg)
+![10](https://i.imgur.com/v6wFTQW.jpeg)
+![11](https://i.imgur.com/pWD0Ox9.jpeg)
+![12](https://i.imgur.com/3zTxWNp.jpeg)
+![13](https://i.imgur.com/ObxJOXZ.jpeg)
+![14](https://i.imgur.com/iuxZJcI.jpeg)
+![15](https://i.imgur.com/J8wtAj2.jpeg)
+![152](https://i.imgur.com/87MujyK.jpeg)
+![16](https://i.imgur.com/uXvCWEf.jpeg)
+![17](https://i.imgur.com/Kxr5Bls.jpeg)
