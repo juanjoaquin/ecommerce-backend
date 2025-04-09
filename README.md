@@ -1,8 +1,5 @@
 # Ecommerce de comida con gestión para usuarios y administradores
-. 
-``
-Lógica de la aplicación
-``
+
 Este proyecto es una plataforma de ecommerce de comida desarrollada con un enfoque fullstack. Permite a los usuarios explorar un catálogo de productos, agregarlos a un carrito de compras, modificarlos o quitarlos, y realizar pedidos, en los cuáles solamente funcionaran mediante un sistema de pago con tarjeta de crédito o débito. La aplicación también incluye un panel administrativo donde se puede modificar el stock de un producto, y confirmar los pedidos realizados.
 
 Útilizo Laravel Sanctum para la autenticación y la generación de tokens, una interfaz hecha con Tailwind CSS, y una arquitectura hecho con un patrón de diseño que mejora la mantenibilidad del código. Además, todo el proyecto está contenedizado con Docker.
